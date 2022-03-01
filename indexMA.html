@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<title>MicroAnalytix</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {font-family: "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding: 16px;
+  font-weight: bold;
+}
+div.middleSection{
+  float: left;
+}
+div.polaroid {
+  width: 200px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  border-radius: 4px;
+  position: relative;
+  float: left;
+  margin: 6px 6px 6px 6px;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+div.polaroid:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+div.sidebar{
+background-color: antiquewhite;
+float: left;
+}
+</style>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card" style="z-index:3;width:250px;" id="mySidebar">
+  <a class="w3-bar-item w3-button w3-border-bottom w3-large" href="#"><img src="https://www.microanalytix.co.nz/Themes/CustomMicroAnalytix/Content/images/logo.gif" style="width:80%;"></a>
+  <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i class="fa fa-remove"></i></a>
+  <a class="w3-bar-item w3-button w3-teal" href="#">Home</a>
+  <a class="w3-bar-item w3-button" href="#">Link 1</a>
+  <a class="w3-bar-item w3-button" href="#">Link 2</a>
+  <a class="w3-bar-item w3-button" href="#">Link 3</a>
+  <a class="w3-bar-item w3-button" href="#">Link 4</a>
+  <a class="w3-bar-item w3-button" href="#">Link 5</a>
+  <div>
+    <a class="w3-bar-item w3-button" onclick="myAccordion('demo')" href="javascript:void(0)">Dropdown <i class="fa fa-caret-down"></i></a>
+    <div id="demo" class="w3-hide">
+      <a class="w3-bar-item w3-button" href="#">Link</a>
+      <a class="w3-bar-item w3-button" href="#">Link</a>
+      <a class="w3-bar-item w3-button" href="#">Link</a>
+    </div>
+  </div>
+</nav>
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px;">
+
+<div id="myTop" class="w3-container w3-top w3-theme w3-large">
+  <p><i class="fa fa-bars w3-button w3-teal w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+  <span id="myIntro" class="w3-hide">MicroAnalytix NZ</span></p>
+</div>
+
+<header class="w3-container w3-theme" style="padding:64px 32px">
+  <h1 class="w3-xxxlarge">MicroAnalytix</h1>
+</header>
+
+<div class="w3-container middleSection" style="padding:32px;">
+
+<h2>This is a title</h2>
+
+<ul class="w3-leftbar w3-theme-border" style="list-style:none">
+ <li>This is a description</li>
+ <li>This is a description</li>
+</ul>
+</br>
+<a href="https://www.microanalytix.co.nz/">MicroAnalytix NZ website</a>
+</br>
+<a href="https://www.google.com">Google</a>
+
+<hr>
+<h2>Download</h2>
+<p>There are the useful files downloaded link</p>
+<a href="https://www.microanalytix.co.nz/Content/files/2022_feb_promo.pdf">Feb Promotion(pdf)</a>
+</br>
+<a href="https://microanalytix.co.nz/Content/files/indexfiles/Leave Request Form.pdf">Leave Request Form</a>
+
+<hr>
+<h2>This is a title</h2>
+<div class="w3-container w3-sand w3-leftbar">
+<p><i>This is a subtitle</p>
+</div>
+</br>
+</br>
+<div class="polaroid">
+  <img src="https://www.microanalytix.co.nz/content/images/thumbs/0018107_advantec_145.png" alt="5 Terre" style="width:100%">
+  <div class="container">
+  <p>Advantec 2022 Catalogue</p>
+  </div>
+</div>
+<div class="polaroid">
+  <img src="https://www.microanalytix.co.nz/content/images/thumbs/0018116_dragon-lab_145.png" alt="5 Terre" style="width:100%">
+  <div class="container">
+  <p>DLAB 2022 Catalogue</p>
+  </div>
+</div>
+<div class="polaroid">
+  <img src="https://www.microanalytix.co.nz/content/images/thumbs/0018118_giorgio-bormac_145.png" alt="Norther Lights" style="width:100%">
+  <div class="container">
+  <p>GB 2022 Catalogue</p>
+  </div>
+</div>
+<div class="polaroid">
+  <img src="https://www.microanalytix.co.nz/content/images/thumbs/0018110_brady_145.png" alt="Norther Lights" style="width:100%">
+  <div class="container">
+  <p>Brady 2022 Catalogue</p>
+  </div>
+</div>
+<div class="polaroid">
+    <img src="https://www.microanalytix.co.nz/content/images/thumbs/0018114_nuve_145.png" alt="Norther Lights" style="width:100%">
+    <div class="container">
+    <p>Nuve 2022 Catalogue</p>
+    </div>
+</div>
+<div class="clearfix"></div>
+</br>
+<hr>
+
+<h2>This is a title</h2>
+<p>This is a title</p>
+<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://microanalytix.co.nz/Content/files/indexfiles/Monthly%20Sales%20Reports.xlsx' width='100%' height='565px' frameborder='0'> </iframe>
+
+</div>
+
+<div class="sidebar" style="width:240px;height:300px;">
+  <p>News Update</p>
+</div>
+<div class="clearfix"></div>
+
+<footer class="w3-container w3-theme" style="padding:32px">
+  <p>Footer information goes here</p>
+</footer>
+     
+</div>
+
+
+
+<script>
+// Open and close the sidebar on medium and small screens
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Change style of top container on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
+    document.getElementById("myIntro").classList.add("w3-show-inline-block");
+  } else {
+    document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+    document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+  }
+}
+
+// Accordions
+function myAccordion(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme", "");
+  }
+}
+</script>
+     
+</body>
+</html> 
